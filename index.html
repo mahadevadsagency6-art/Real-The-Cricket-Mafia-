@@ -1,0 +1,331 @@
+<!doctype html>
+
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Cricket Mafia — Join Telegram</title>
+  <meta name="description" content="The Cricket Mafia — Premium free cricket tips. Join our Telegram channel for match, toss & session tips." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#10040a;
+      --panel:#1a0b0f;
+      --accent:#ff2f57;
+      --muted:#bfa7ad;
+      --glass: rgba(255,255,255,0.04);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(255,47,87,0.03), transparent 10%),
+        radial-gradient(900px 500px at 90% 90%, rgba(0,0,0,0.25), transparent 10%),
+        var(--bg);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:80px;
+    }/* container */
+.wrap{
+  max-width:980px;
+  margin:18px auto;
+  padding:22px;
+}
+
+/* top nav (mini) */
+.nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.logo{
+  width:46px;
+  height:46px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2b0610,#3b0f1a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:var(--accent);
+  font-size:17px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.6), inset 0 -3px 10px rgba(0,0,0,0.2);
+}
+.nav a{color:var(--muted); text-decoration:none; font-size:14px}
+
+/* hero card */
+.hero{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: var(--radius);
+  padding:22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.profile{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  padding-top:6px;
+}
+.avatar{
+  width:136px;
+  height:136px;
+  border-radius:999px;
+  border:6px solid rgba(255,47,87,0.15);
+  overflow:hidden;
+  background:linear-gradient(180deg,#2b0610,#3b0f1a);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+h1{
+  margin:14px 0 6px;
+  font-size:1.6rem;
+  color:var(--accent);
+  letter-spacing:0.2px;
+}
+.tag{
+  color:var(--muted);
+  font-size:0.92rem;
+  margin-bottom:14px;
+}
+.desc{
+  color: #e8cfd3;
+  font-size:0.95rem;
+  max-width:760px;
+  margin:8px auto 18px;
+  line-height:1.45;
+}
+
+/* CTA */
+.cta{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin:14px 0 10px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 26px;
+  border-radius:46px;
+  font-weight:700;
+  font-size:16px;
+  text-decoration:none;
+  cursor:pointer;
+  border: none;
+  transition:transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.btn-join{
+  background: linear-gradient(90deg, var(--accent) 0%, #ff496f 100%);
+  color:white;
+  min-width:220px;
+}
+.btn-ghost{
+  background:transparent;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.04);
+  min-width:160px;
+}
+.btn:active{transform:translateY(2px)}
+.btn:hover{transform:translateY(-4px)}
+
+/* countdown card */
+.countcard{
+  margin:18px auto;
+  background: linear-gradient(180deg, rgba(255,47,87,0.03), rgba(255,47,87,0.01));
+  border-radius:14px;
+  padding:14px;
+  max-width:640px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  border:1px solid rgba(255,47,87,0.06);
+}
+.count-left{color:var(--muted); font-weight:600}
+.count-time{
+  font-size:28px;
+  color:var(--accent);
+  font-weight:800;
+  text-align:center;
+}
+.small{font-size:12px;color:var(--muted);letter-spacing:1px}
+
+/* features grid */
+.features{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:14px;
+  margin-top:20px;
+}
+.card{
+  background:var(--panel);
+  padding:14px;
+  border-radius:14px;
+  min-height:84px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  border:1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.card h3{margin:0;font-size:15px;color:var(--accent)}
+.card p{margin:2px 0 0;color:var(--muted);font-size:13px;line-height:1.3}
+
+/* bottom CTA fixed on mobile */
+.bottom-cta{
+  position:fixed;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  display:flex;
+  justify-content:center;
+  z-index:90;
+  pointer-events:auto;
+}
+.bottom-cta .btn-join{
+  width:100%;
+  padding:14px;
+  border-radius:46px;
+  font-size:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* responsive */
+@media (max-width:720px){
+  .wrap{padding:14px}
+  .avatar{width:120px;height:120px}
+  h1{font-size:1.35rem}
+  .features{grid-template-columns:1fr}
+  .countcard{flex-direction:column;align-items:center;text-align:center}
+  .count-left{order:2}
+  .count-time{order:1}
+  .nav a{display:none}
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <div class="brand">
+        <div class="logo">CM</div>
+        <div>
+          <div style="font-weight:700">The Cricket Mafia</div>
+          <div style="font-size:12px;color:var(--muted)">Premium Free Cricket Tips</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#join" style="margin-left:12px">Join</a>
+      </nav>
+    </header><main class="hero" role="main" aria-labelledby="main-title">
+  <section class="profile">
+    <div class="avatar" aria-hidden="true">
+      <img src="TCM ORIGINAL .jpg" alt="The Cricket Mafia profile image" onerror="this.style.display='none'">
+    </div>
+
+    <h1 id="main-title">The Cricket Mafia <span style="font-size:12px;color:var(--muted);font-weight:600">™</span></h1>
+    <div class="tag">Cricket Analysis & Trading Specialist</div>
+    <p class="desc">Daily free tips — Toss, Match & Session calls. Real-time alerts, performance tracking, and fast signals suited for smart entries. Join our Telegram community now for premium-style tips without any subscription.</p>
+
+    <div class="cta" id="join">
+      <a class="btn btn-join" href="https://t.me/+FijRxXeG01JkNjFl" target="_blank" rel="noopener noreferrer">
+        🔥 Join Telegram Now
+      </a>
+      <a class="btn btn-ghost" href="#features">Features</a>
+    </div>
+
+    <div class="countcard" aria-hidden="false">
+      <div style="flex:1">
+        <div class="count-left">Next Signal Drop In</div>
+        <div class="small">Stay ready — instant alerts</div>
+      </div>
+      <div style="min-width:120px">
+        <div class="count-time" id="count">00:20</div>
+        <div class="small">SECONDS</div>
+      </div>
+    </div>
+
+    <section id="features" class="features" aria-label="Features">
+      <div class="card">
+        <div>
+          <h3>Live Match Updates</h3>
+          <p>Real-time score & key moments to time your entries.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Cricket Prediction System</h3>
+          <p>Stats-based match analysis for higher hit-rate tips.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Instant Match Alerts</h3>
+          <p>No-delay notifications for every important signal.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Performance Tracking</h3>
+          <p>Consistent tips & result records — transparency matters.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+  </div>  <div class="bottom-cta" role="region" aria-label="Join telegram">
+    <a class="btn btn-join" href="https://t.me/+FijRxXeG01JkNjFl" target="_blank" rel="noopener noreferrer">Join Telegram Now</a>
+  </div>  <script>
+    // Simple countdown demo (20s) — loops
+    (function(){
+      var secs = 20;
+      var el = document.getElementById('count');
+      function tick(){
+        secs--;
+        if(secs < 0) secs = 20;
+        el.textContent = (secs < 10 ? '0' + secs : secs);
+      }
+      // show initial in mm:ss style (seconds)
+      el.textContent = (secs < 10 ? '0' + secs : secs);
+      setInterval(tick, 1000);
+    })();
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = this.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'center'});
+        }
+      });
+    });
+  </script></body>
+</html>
