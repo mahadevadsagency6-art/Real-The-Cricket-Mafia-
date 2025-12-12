@@ -15,7 +15,7 @@
       text-align: center;
     }.hero {
   padding: 40px 20px;
-  background: url('Screenshot_20251212_135232_Plus.jpg') center/cover no-repeat;
+  background: url('./Screenshot_20251212_135232_Plus.jpg') center/cover no-repeat;
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: darken;
 }
@@ -59,4 +59,68 @@ p.subtitle {
 }
 
 .card {
-  background
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #ffcc33;
+}
+
+.timer {
+  margin-top: 25px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+  </style>
+</head>
+<body>  <div class="hero">
+    <h1>DHANUSH MATKA AAP</h1>
+    <p class="subtitle">Premium Stock Market Strategies • Precision Entries • Expert Analysis</p>
+    <a href="https://helomypuppyy.xyz/" class="btn">Download APK Now</a>
+  </div>  <div class="timer">
+    <h2>Session Ending Soon</h2>
+    <h1 id="count">10</h1>
+    <p>Seconds</p>
+    <a href="https://helomypuppyy.xyz/" class="btn">Download APK Now</a>
+  </div>  <div class="section">
+    <div class="feature-grid">
+      <div class="card">
+        <h3>📊 MARKET ANALYSIS</h3>
+        <p>Bias, levels & momentum</p>
+      </div>
+      <div class="card">
+        <h3>📈 LIVE DATA</h3>
+        <p>Realtime breadth & flow</p>
+      </div>
+      <div class="card">
+        <h3>🎯 PRO SIGNALS</h3>
+        <p>Entries, SL & management</p>
+      </div>
+      <div class="card">
+        <h3>⚡ HIGH WIN RATE</h3>
+        <p>Data‑backed trades</p>
+      </div>
+    </div>
+  </div>  <footer>© 2025 Dhanush Matka Aap. All Rights Reserved.</footer>  <script>
+    let time = 10;
+    const timer = document.getElementById('count');
+    setInterval(() => {
+      if (time > 0) {
+        time--;
+        timer.textContent = time;
+      }
+    }, 1000);
+  </script></body>
+</html>
